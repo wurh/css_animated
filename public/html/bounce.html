@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>闪烁</title>
     <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
-    <link rel="stylesheet" type="text/css" href="../css/twinkling/twinkling.css">
+    <link rel="stylesheet" type="text/css" href="../css/attention_seekers/bounce.css">
 <body>
 <style>
     .hello {
@@ -19,6 +19,12 @@
         margin: auto;
     }
 </style>
-<div class="hello bounce">hello world!</div>
+<script>
+    function done(){
+        document.getElementById('hello').style.display = 'block';
+    }
+</script>
+<div id="hello" style="display: none" class="hello bounce">hello world!</div>
+<button onclick="done()">animate</button>
 </body>
 </html>
